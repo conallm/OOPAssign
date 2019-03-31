@@ -31,21 +31,27 @@ namespace OOPAssign
             dataGridView1.DataSource = dt;
         }
         
-        //Clear Data
+        //Clear Data method
         private void ClearData()
         {
             txtName.Text = "";
             txtId.Text = "";
             txtPPSN.Text = "";
+             
             txtAddress.Text = "";
         }
 
+        // con
         public DataTable ConvertToDatatable()
         {
+            if (rbUnder.Checked = true) ;
+                string status = "Undergraduate";
+
             DataTable dt = new DataTable();
             dt.Columns.Add("Name");
             dt.Columns.Add("Id");
             dt.Columns.Add("PPSN");
+            dt.Columns.Add("Status");
             dt.Columns.Add("Address");
 
             foreach (var item in studentList )
@@ -54,11 +60,32 @@ namespace OOPAssign
                 row["Name"] = item.Name;
                 row["Id"] = item.StudentId;
                 row["PPSN"] = item.PPSN;
+                row["Status"] = item.Status;
                 row["Address"] = item.Address;
                 dt.Rows.Add(row);
-
+                Console.WriteLine("TestComment");
+                //Test comment for git purposesgit
             }
             return dt;
+        }
+
+        private void AddStudent(string name, string studentId, string pPSN, string status, string address )
+        {
+            studentList.Add(new Student { Name = name, StudentId = studentId, PPSN = pPSN, Status = status, Address = address });
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if(txtName.Text != "" && txtId.Text != "" && txtPPSN.Text != "" && txtAddress.Text != "")
+            {
+                AddStudent(txtName.Text, txtId.Text, txtPPSN.Text, txtAddress.Text);
+                MessageBox.Show("Student has been added to System");
+                DisplayData();
+            }
+            else
+            {
+                MessageBox.Show("Please complete all fields to add student");
+            }
         }
     }
 }
