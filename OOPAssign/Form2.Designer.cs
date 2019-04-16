@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PPSN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblName = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
@@ -52,41 +47,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
-            this.Id,
-            this.Status,
-            this.PPSN,
-            this.Address});
             this.dataGridView1.Location = new System.Drawing.Point(-1, 269);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(538, 177);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            // 
-            // PPSN
-            // 
-            this.PPSN.HeaderText = "PPSN";
-            this.PPSN.Name = "PPSN";
-            // 
-            // Address
-            // 
-            this.Address.HeaderText = "Address";
-            this.Address.Name = "Address";
             // 
             // lblName
             // 
@@ -191,12 +156,13 @@
             this.btnSubmit.TabIndex = 12;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 450);
+            this.ClientSize = new System.Drawing.Size(620, 450);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtPPSN);
@@ -219,13 +185,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PPSN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblStatus;
@@ -238,5 +197,6 @@
         private System.Windows.Forms.TextBox txtPPSN;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

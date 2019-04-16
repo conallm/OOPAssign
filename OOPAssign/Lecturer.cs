@@ -14,8 +14,8 @@ namespace OOPAssign
         public int YearsExper { get; set; }
 
         //Lecturer constructor
-        public Lecturer(string pPSN, string name, string address, string id, int salary, string subjectArea, List<Subject> subjectsTaught, int yearsExper)
-            :base(pPSN, name, address, id, salary)
+        public Lecturer(string name, string pPSN, string address, string id, int salary, string subjectArea, List<Subject> subjectsTaught, int yearsExper)
+            :base(name, pPSN, address, id, salary)
         {
             SubjectArea = subjectArea;
             SubjectsTaught = subjectsTaught;
@@ -24,6 +24,10 @@ namespace OOPAssign
         //overloaded Lecturer constructor
         public Lecturer(string name)
             :base(name)
+        {
+
+        }
+        public Lecturer()
         {
 
         }

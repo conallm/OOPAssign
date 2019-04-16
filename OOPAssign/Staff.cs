@@ -25,5 +25,9 @@ namespace OOPAssign
         {
 
         }
+        public Staff()
+        {
+
+        }
     }
 }

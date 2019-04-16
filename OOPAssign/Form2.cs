@@ -41,14 +41,11 @@ namespace OOPAssign
             txtAddress.Text = "";
         }
 
-        // con
+        // convert list to datatable
         public DataTable ConvertToDatatable()
         {
-            if (rbUnder.Checked = true) ;
-                string status = "Undergraduate";
-
             DataTable dt = new DataTable();
-            dt.Columns.Add("Name");
+            dt.Columns.Add("Student");
             dt.Columns.Add("Id");
             dt.Columns.Add("PPSN");
             dt.Columns.Add("Status");
@@ -57,14 +54,13 @@ namespace OOPAssign
             foreach (var item in studentList )
             {
                 var row = dt.NewRow();
-                row["Name"] = item.Name;
+                row["Student"] = item.Name;
                 row["Id"] = item.StudentId;
                 row["PPSN"] = item.PPSN;
                 row["Status"] = item.Status;
                 row["Address"] = item.Address;
                 dt.Rows.Add(row);
-                Console.WriteLine("TestComment");
-                //Test comment for git purposesgit
+               
             }
             return dt;
         }
@@ -76,10 +72,24 @@ namespace OOPAssign
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            string status;
+
+            if (rbUnder.Checked)
+            {
+                status = "Undergraduate";
+            }
+
+            else
+            {
+                status = "Postgraduate";
+            }
+
             if(txtName.Text != "" && txtId.Text != "" && txtPPSN.Text != "" && txtAddress.Text != "")
             {
-                AddStudent(txtName.Text, txtId.Text, txtPPSN.Text, txtAddress.Text);
+                AddStudent(txtName.Text, txtId.Text, txtPPSN.Text, status, txtAddress.Text);
+
                 MessageBox.Show("Student has been added to System");
+
                 DisplayData();
             }
             else

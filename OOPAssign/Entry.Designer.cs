@@ -55,6 +55,7 @@
             this.btnAddLec.TabIndex = 3;
             this.btnAddLec.Text = "Add Lecturer";
             this.btnAddLec.UseVisualStyleBackColor = true;
+            this.btnAddLec.Click += new System.EventHandler(this.btnAddLec_Click);
             // 
             // txtSearch
             // 
@@ -100,7 +101,7 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // AddStudent
+            // Entry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,7 +113,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnAddLec);
             this.Controls.Add(this.btnAddStudent);
-            this.Name = "AddStudent";
+            this.Name = "Entry";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

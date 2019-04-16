@@ -31,5 +31,10 @@ namespace OOPAssign
             
 
         }
+        private void btnAddLec_Click(object sender, EventArgs e)
+        {
+            AddLec AddLec = new AddLec();
+            AddLec.Show();
+        }
     }
 }
