@@ -16,5 +16,37 @@ namespace OOPAssign
         {
             InitializeComponent();
         }
+
+        private bool ValuesMatch(DataGridView item, string text)
+        {
+            bool matches = false;
+
+            matches |= item.Text.ToLower().Contains(text.ToLower());
+
+            if (matches)
+
+            {
+                return true;
+            }
+
+            foreach (DataGridViewCell in Form2.dataGridViewStu)
+            {
+                matches |= subitem.Text.ToLower().Contains(text.ToLower());
+
+                if (matches)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchValue = txtSearch.Text;
+            ValuesMatch();
+            
+        }
     }
 }

@@ -36,5 +36,14 @@ namespace OOPAssign
             AddLec AddLec = new AddLec();
             AddLec.Show();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+            Search Search = new Search();
+            Search.Show();
+
+            
+        }
     }
 }

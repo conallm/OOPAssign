@@ -21,14 +21,14 @@ namespace OOPAssign
             studentList.Add(new Student() { Name = "Geraldine Carpenter", StudentId = "202", PPSN = "678987B", Status = "Postgradate", Address = "Rathmines" });
             studentList.Add(new Student() { Name = "Larry Levan", StudentId = "303", PPSN = "567200G", Status = "Undergraduate", Address = "Galway" }); 
 
-            dataGridView1.DataSource = studentList;
+            dataGridViewStu.DataSource = studentList;
         }
         //Display data in the datagrdiview
-        private void DisplayData()
+        public void DisplayData()
         {
             DataTable dt = new DataTable();
             dt = ConvertToDatatable();
-            dataGridView1.DataSource = dt;
+            dataGridViewStu.DataSource = dt;
         }
         
         //Clear Data method

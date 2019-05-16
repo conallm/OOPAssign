@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewStu = new System.Windows.Forms.DataGridView();
             this.lblName = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
@@ -41,17 +41,17 @@
             this.txtPPSN = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStu)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewStu
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 269);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(538, 177);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewStu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStu.Location = new System.Drawing.Point(-1, 269);
+            this.dataGridViewStu.Name = "dataGridViewStu";
+            this.dataGridViewStu.RowHeadersVisible = false;
+            this.dataGridViewStu.Size = new System.Drawing.Size(538, 177);
+            this.dataGridViewStu.TabIndex = 0;
             // 
             // lblName
             // 
@@ -175,10 +175,10 @@
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewStu);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +197,6 @@
         private System.Windows.Forms.TextBox txtPPSN;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewStu;
     }
 }

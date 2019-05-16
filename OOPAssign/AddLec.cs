@@ -22,7 +22,7 @@ namespace OOPAssign
             lecturerList.Add(new Lecturer() { Name = "Lucy Lonergan", PPSN = "997200G", Address = "Grangegorman", Id = "454", Salary = 30000, SubjectArea = "Languages", SubjectsTaught = new List<Subject> { new Subject() { Name = "Spanish" } }, YearsExper = 1 });
 
 
-            dataGridView1.DataSource = lecturerList;
+            dataGridViewLec.DataSource = lecturerList;
 
 
         }
@@ -59,7 +59,7 @@ namespace OOPAssign
 
                 dt.Rows.Add(row);
 
-                dataGridView1.DataSource = dt;
+                dataGridViewLec.DataSource = dt;
             }
 
             /* private void comboArea_SelectedIndexChanged(object sender, EventArgs e)
@@ -94,7 +94,7 @@ namespace OOPAssign
                 AddLecturer(txtName.Text, txtID.Text, txtPPSN.Text, txtAddress.Text,
                    Int32.Parse(txtSalary.Text), comboArea.Text, subjectsTaught, Int32.Parse(txtYears.Text));
 
-                dataGridView1.DataSource = lecturerList;
+                dataGridViewLec.DataSource = lecturerList;
 
                 MessageBox.Show("New Lecturer added.");
                 DisplayData();

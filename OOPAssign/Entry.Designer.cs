@@ -30,7 +30,6 @@
         {
             this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnAddLec = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnShowStu = new System.Windows.Forms.Button();
             this.btnShowLec = new System.Windows.Forms.Button();
@@ -57,21 +56,15 @@
             this.btnAddLec.UseVisualStyleBackColor = true;
             this.btnAddLec.Click += new System.EventHandler(this.btnAddLec_Click);
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(77, 151);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(172, 20);
-            this.txtSearch.TabIndex = 4;
-            // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(283, 147);
+            this.btnSearch.Location = new System.Drawing.Point(173, 145);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(145, 23);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Search Lecturer/Student";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnShowStu
             // 
@@ -105,25 +98,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 450);
+            this.ClientSize = new System.Drawing.Size(515, 450);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnShowLec);
             this.Controls.Add(this.btnShowStu);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnAddLec);
             this.Controls.Add(this.btnAddStudent);
             this.Name = "Entry";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Button btnAddLec;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnShowStu;
         private System.Windows.Forms.Button btnShowLec;

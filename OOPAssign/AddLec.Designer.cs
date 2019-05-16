@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtSalary = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewLec = new System.Windows.Forms.DataGridView();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboArea = new System.Windows.Forms.ComboBox();
@@ -46,7 +46,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.txtYears = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLec)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -120,13 +120,13 @@
             this.txtSalary.Size = new System.Drawing.Size(100, 20);
             this.txtSalary.TabIndex = 8;
             // 
-            // dataGridView1
+            // dataGridViewLec
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 332);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(442, 150);
-            this.dataGridView1.TabIndex = 9;
+            this.dataGridViewLec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLec.Location = new System.Drawing.Point(16, 332);
+            this.dataGridViewLec.Name = "dataGridViewLec";
+            this.dataGridViewLec.Size = new System.Drawing.Size(442, 150);
+            this.dataGridViewLec.TabIndex = 9;
             // 
             // checkedListBox1
             // 
@@ -228,7 +228,7 @@
             this.Controls.Add(this.comboArea);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewLec);
             this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label4);
@@ -240,7 +240,7 @@
             this.Controls.Add(this.txtName);
             this.Name = "AddLec";
             this.Text = "AddLec";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,7 +257,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtSalary;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewLec;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboArea;
